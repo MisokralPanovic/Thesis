@@ -1,28 +1,8 @@
 \subsection{Transcriptional Changes of Human and Bovine \textit{IFITs}} \label{Transcriptional Changes of Human and Bovine \textit{IFITs}}
-To unravel the impact of cellular stimulation with activators of the innate immune response and either human RSV or bovine RSV, on the expression of human and bovine \textit{IFIT} genes, quantitative real-time reverse transcription PCR (qPCR) analysis was executed in accordance with the methodology outlined in Section \ref{Quantitative Real Time/Reverse Transcription PCR}. Briefly, cells were cultivated in 12-well plates and subsequently subjected to the respective stimulants. At the endpoint of the experiments, the RNA was extracted, followed by cDNA synthesis and the transcript quantification by qPCR. All transcript levels were standardized to either human or bovine \textit{GAPDH} expression, employing either the 
-\(\Delta\)\(\Delta\)Ct method or, in the case of bovine \textit{IFITs}, initial copy number assessment. Subsequently, all values were normalized against mock-treated samples, enabling data aggregation and inter-experimental induction value comparison. The statistical analysis was conducted as outlined in Section \ref{Statistical Analysis}. Notably, the choice of the appropriate statistical test hinged on the normality of data distribution and equality of variance, aspects which will be underscored in the ensuing text.
+To unravel the impact of cellular stimulation with activators of the innate immune response and human RSV, on the expression of human \textit{IFIT} genes, quantitative real-time reverse transcription PCR (qPCR) analysis was executed in accordance with the methodology outlined in Section \ref{Quantitative Real Time/Reverse Transcription PCR}. Briefly, cells were cultivated in 12-well plates and subsequently subjected to the respective stimulants. At the endpoint of the experiments, the RNA was extracted, followed by cDNA synthesis and the transcript quantification by qPCR. All transcript levels were standardized to human \textit{GAPDH} expression, employing  the 
+\(\Delta\)\(\Delta\)Ct method. Subsequently, all values were normalized against mock-treated samples, enabling data aggregation and inter-experimental induction value comparison. The statistical analysis was conducted as outlined in Section \ref{Statistical Analysis}. Notably, the choice of the appropriate statistical test hinged on the normality of data distribution and equality of variance, aspects which will be underscored in the ensuing text.
 
 
-
-
-\subsubsection{Bovine \textit{IFIT} qPCR Primer Validation} \label{Bovine IFIT qPCR Primer Validation}
-Due to the initial lack of commercially available primers for the detection of bovine \textit{IFIT} transcripts at the outset of the project, I devised a panel comprising three primer sets (PS) for each bovine \textit{IFIT} gene. Detailed information about this process is outlined in Section \ref{Primer Design and Assay Setup}. In a nutshell, I inputted the coding sequences into the PrimerQuest software (Integrated DNA Technologies) to identify the most suitable oligonucleotides. To evaluate the amplification efficiencies of each primer set, I employed \textit{IFIT} DNA clones from a bovine ISG library as standards (accessible through a collaboration with CVR Glasgow). The outcomes are depicted in Figure \ref{Validation of custom-made bIFIT qPCR primers}. The graph demonstrates that primer sets 1 exhibited the most favourable amplification efficiencies. All primer sets, except for \textit{bIFIT3}, yielded nearly impeccable amplification efficiencies of around 100\%. Consequently, they were chosen for subsequent experiments. While \textit{bIFIT3} primer sets demonstrated similar outcomes in terms of standard curve slopes and amplification efficiencies, PS1 consistently outperformed the others in repeated testing rounds (data not presented). As a result, it was singled out for further experimentation.
-
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{07. Chapter 2/Figs/01. Technologies/02. primer validation.pdf}
-    \caption[Validation of Custom-Made \textit{bIFIT} qPCR Primers.]{\textbf{Validation of Custom-Made \textit{bIFIT} qPCR Primers.} The custom-designed primers were evaluated by creating a serial dilution of bovine \textit{IFIT}-containing plasmids, provided by the CVR Glasgow. The resulting standard curves are shown here. Primer set (PS) 1 (a), 2 (b), and 3 (c) are depicted for bovine \textit{IFIT1} (1.), \textit{IFIT2} (2.), \textit{IFIT3} (3.), and \textit{IFIT5} (4.), along with their calculated amplification efficiencies.}
-    \label{Validation of custom-made bIFIT qPCR primers}
-\end{figure}
-
-The PSs behaviour was monitored throughout the project, as fresh standard curves were created per experiment. Figure \ref{The Performance of Custom-Made Primer-Sets Over Time} shows that the average data is consistent with what was observed in initial testing (Figure \ref{Validation of custom-made bIFIT qPCR primers}), however, there were per experiment deviations in slope angles for each of the selected primer pairs. The underlying amplification efficiencies stayed consistent, as is highlighted by the averaged efficiencies displayed. The initial \textit{bIFIT3} PSs differential amplification slopes compared to the other \textit{bIFIT} PSs, as well as the variable nature of PSs performance throughout the project prohibits the usage of \(\Delta\)\(\Delta\)Ct methodologies for transcript quantification as the increase in cycle threshold would not be proportional to the decrease of transcript abundance between the \textit{bIFITs}, and thus a different methodology had to be adopted. This is described in detail in Section \ref{Data Processing}. In short, the copy numbers were deducted from standard curves and factorised by the relative abundance of bovine \textit{GAPDH}. This ensured the slope-independent establishment of relative expression values, mirroring and complementing data from \(\Delta\)\(\Delta\)Ct methodologies.
-
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{07. Chapter 2/Figs/01. Technologies/03. standard curves behaviour.pdf}
-    \caption[The Performance of Custom-Made Primer-Sets Over Time.]{\textbf{The Performance of Custom-Made Primer-Sets Over Time.} During the experiments with custom-made \textit{bIFIT} qPCR primers, standard curves had to be always constructed. Here, the underlying average amplification efficiencies and standard curves, along with the individual data, from all the experiments and coloured by the experiment are displayed.}
-    \label{The Performance of Custom-Made Primer-Sets Over Time}
-\end{figure}
 
 \subsubsection{Responses of to Known Activators of Innate Immune Response} \label{Responses to Known Activators of Innate Immune Response}
 In order to establish the expression competency of \textit{IFIT} of the cell lines used, along with elucidating how different innate immune pathways contribute to the overall expression profile, I treated the cells with differing activators of the innate immune response. As described in Section \ref{Routes of IFIT Expression Activation}, and depicted in Figure \ref{Pathways Inducing ISG mRNA Production.},  interferon-stimulated genes (ISGs) can have their induction activated either via the interferon receptor signalling, intracellular foreign nucleic acid detection or via extracellular PAMP sensing. The latter, in the context of RSV, includes stimulation of TLR4 with either LPS or RSV particles. After surveying the literature I ended up using 1,000 international units (IU) per mL or the equivalent amount of 5 ng/mL for human and bovine interferon alpha respectively (\cite{Terenzi2006DistinctISG56}; \cite{Santhakumar2018ChickenViruses}). For interferon-gamma stimulation, which stimulates predominantly immune cells \textit{in vivo} concentrations of 500, 1,000 and 2,000 IU/mL were used. LPS was used in the concentration range of 0.5-10 ng/mL for the stimulation of bovine cells and in concentrations of 5 ng/mL and 2 \(\mu\)g/mL for the stimulation of human cells (\cite{Mears2019Ifit1Cells}; \cite{Zhang2019GrouperResponse}). To stimulate intracellular foreign nucleic acid recognition 2 \(\mu\)g of poly I:C were transfected into A549 cells and incubated for 24 hours (\cite{Mears2019Ifit1Cells}; \cite{Palchetti2015TransfectedCells}).
@@ -72,56 +52,8 @@ When A549 cells were transfected with 2\(\mu\)g of poly I:C for 24 hours we were
 
 Lastly, we validated the human interferon alpha induction data in a more biologically relevant cell line, BEAS-2B. Established from bronchial epithelial biopsies from healthy samples, and later immortalised using the transfection of cyclin-dependent kinase 4 and human telomerase reverse transcriptase, these cells are an invaluable tool in the field of bronchial development and pathogenesis (\cite{Ramirez2004ImmortalizationOncoproteins}). After the treatment with human interferon alpha at concentrations of 1,000 IU/mL for 3 hours, we can see that this stimulation was not sufficient to induce the expression of any human \textit{IFIT} (Figure \ref{BEAS-2B responses to hIFNa.}). However, when the cells were stimulated for 24 hours we can observe induction above biological significance for \textit{hIFIT1}, \textit{hIFIT2}, and \textit{hIFIT3}, with 4-fold, 8-fold, and 5-fold increase respectively. \textit{hIFIT5} shows only 2-fold median induction, which could be caused by the intrinsic variability of the assay. So as we observed with the A549 cell line, \textit{hIFIT5} behaves in discord with the other human \textit{IFITs}. All \textit{hIFIT} values had normal distributions and unequal variance.
 
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{07. Chapter 2/Figs/02. Induction/01. mdbk_treat_bifna.pdf}
-    \caption[qPCR Analysis of MDBK \textit{bIFIT} Response to bIFN\(\alpha\).]{\textbf{qPCR Analysis of MDBK \textit{bIFIT} Response to bIFN\(\alpha\).} The relative abundance of (a) \textit{bIFIT1}, (b) \textit{bIFIT2}, (c) \textit{bIFIT3}, (d) \textit{bIFIT5}, and (e) \textit{bMx1} genes, extracted from the MDBK cell line, with response to bovine interferon alpha (IFN\(\alpha\)) at a concentration of 5 ng/mL for a treatment duration of 3 or 6 hours. The shown values are relative to standardised mock values. The red circles signify median values. The black dotted line indicates mock expression, while the red dotted lines indicate biologically significant levels of induction. Numeric values signify the p-values compared to mock.}
-    \label{MDBK responses to bIFNa}
-\end{figure}
 
-The Madin-Darby bovine kidney (MDBK) cell line, derived from bovine renal epithelium in 1958 (\cite{Madin1958EstablishedOrigin}), is an established model system used in bovine virology studies. We assayed them for the induction potential of bovine \textit{IFITs}, alongside bovine \textit{Mx1} using bovine interferon alpha and LPS (bovine interferon-gamma was not available commercially). Bovine \textit{Mx1} was included in the analyses as it is a ISG, widely reported in immunology and virology studies (ADD SOME REFERENCES HERE FOR CRYING OUT LOUD), and because we saw minimal bovine \textit{IFIT} responses throughout the study and wanted to ensure the cell lines used had the internal pathways for ISG induction correctly functioning. Figure \ref{MDBK responses to bIFNa} shows the \textit{bIFIT} and \textit{bMx1} responses to the stimulation with bIFN\(\alpha\) at a concentration of 5 ng/mL (equivalent to 1,000 UI/mL of hIFN\(\alpha\)) for either 3 or 6 hours. Interestingly, we see a similar effect in induction amplitude but an opposing effect in time of stimulation to amplitude compared to hIFN\(\alpha\) induction in BEAS-2B cells (Figure \ref{BEAS-2B responses to hIFNa.}). DESCRIBE THE DATA ITSELF
-
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{07. Chapter 2/Figs/02. Induction/02. mdbk_treat_lps.pdf}
-    \caption[qPCR Analysis of MDBK \textit{bIFIT} Response to LPS.]{\textbf{qPCR Analysis of MDBK \textit{bIFIT} Response to LPS.} The relative abundance of (a) \textit{bIFIT1}, (b) \textit{bIFIT2}, (c) \textit{bIFIT3}, (d) \textit{bIFIT5}, and (e) \textit{bMx1} genes, extracted from the MDBK cell line, with response to bacterial LPS at a concentration of 0.5, 1, 2.5, 5, and 10 ng/mL for a treatment duration of 6 hours. The shown values are relative to standardised mock values. The red circles signify median values. The black dotted line indicates mock expression, while the red dotted lines indicate biologically significant levels of induction. Numeric values signify the p-values compared to mock.}
-    \label{MDBK responses to LPS}
-\end{figure}
-
-Bovine Mx1 is included in all experiments with bovine cells as it is an ISG that is induced by range of infections and the activators of innate immune response. It is also a control for bIFN alpha (if it works properly and is not degraded).
-
-Neither bMx1 nor bIFITs are induced by LPS in the concentration range tested. bMx1 was induced by all bIFN alpha at different concentrations and timepoints, but at 5 ng/mL for 24h. This means that either that treatment failed or 24h post adding the bIFN treatment is too late to capture the ISG induction. All targets are induced by bIFN alpha treatment at 5 ng/mL for 3 hours. bIFIT1 also responds to low concentration (0.5 ng/mL) for 6h treatment, but not the other IFITs. No other concentration/time combination induced bIFITs. 
-
-This all suggests that MDBK are responsive to bIFN alpha and capable of bIFIT induction, but the responses are week, especially compared to human cells.
-
-I have a hypothesis that in bovine cells the IFITs are basally expressed to higher levels  (that would explain why we can detect them by IF in mock and infected cell although the qPCR data suggest there is no induction).
-
-
-
-
-% bt paper
-% bt ifn figure
-(\cite{McClurkin1974ComparisonVirus})
-
-
-
-
-
-\subsubsection{Species-Specific Responses of \textit{IFITs} to RSV} \label{Species-Specific Responses of IFITs to RSV}
-
-\myparagraph{Growth curves of bovine RSV in bovine cell lines} \label{Growth curves of bovine RSV in bovine cell lines}
-Describe data: \newline
-asdasdasd \newline
-This was done as a complement to existing data done by other people in Dalan’s group on human cell lines with hRSV growth curves. The novelty is especially growth curves in BT cells. I do not know if I totally knew what I was doing at the time, so I do not know how much to trust this data.  
-
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{07. Chapter 2/Figs/01. Technologies/01. growth_curves.pdf}
-    \caption[bRSV growth curves in MDBK and BT cell lines.]{\textbf{bRSV growth curves in MDBK and BT cell lines.} sdfgsdfg sdfg sdfg sdfg sdfg sdfg }
-    \label{bRSV growth curves in MDBK and BT cell lines}
-\end{figure}
-
-
+\subsubsection{Human \textit{IFITs} Responses to hRSV} \label{Human \textit{IFITs} Responses to hRSV}
 Old text:
 In line with bovine IFIT responses investigation, human IFIT responses to human (h) RSV were assessed. The virus was prepared as described in section 7.1. Briefly, infected cells were sonicated, cell debris was separated by centrifugation and virus-containing supernatant was gathered and titred. Human epithelial type 2 (HEp-2) cells were infected with the hRSV-containing supernatant at multiplicities of infection (MOI) of 0.1 and 2. These cells were chosen for the initial preliminary experiments as they are known to grow the virus well and their tissue of origin (laryngeal carcinoma) is relevant to the native site of RSV replication. It is to be noted that this cell line is believed to be contaminated by HeLa cell line and in later experiments should be replaced by more physiological models of human lung epithelial tissue. As a positive control, 1000 U of hIFNα was used. Samples were collected 24 hours post-infection. Cellular RNA was extracted and converted to complementary DNA, as described in section 7.3. Human IFIT transcripts were quantified relative to mock-infected cells. GAPDH-normalised qPCR data can be seen in Figure 8. We observed no significant IFIT induction at the MOI of 0.1, however, infection with hRSV at an MOI of 2 provided significant induction for all targets tested. All human IFITs were induced by approximately 5-fold. With regards to interferon responses, all four targets were transcriptionally upregulated following IFNα treatment. The induction of hIFIT2 was equal to the one induced by viral infection at an MOI of 2, while the rest of hIFITs were induced more greatly. Compared to data described in section 8.3 here the variation was minimal and thus the data is more reliable. We can conclude that both interferon-alpha treatment, as well as RSV infection, transcriptionally upregulate human IFITs in HEp-2 cells.
 
@@ -164,50 +96,43 @@ Validation in more physiologically relevant cell line. UV inactivated hRSV does 
 
 The trends seen with A549 are kind of recapitulated.
 
+\subsubsection{Responses of Human Cell Lines to bRSV} \label{Responses of Human Cell Lines to bRSV}
+How were viruses harvested and cells infected \newline
+Justify moi and timepoints
 
-Old text:
-Alongside confirming the induction potential of bIFITs in MDBK cells, we assessed the effect of bovine respiratory syncytial virus (bRSV) on IFIT induction. As bRSV is a known inducer of the interferon response we expect bovine IFIT genes to be upregulated following infection. MDBK cells were infected with purified bRSV at MOI of 1 for 24 and 48 hours. As a positive control human IFNα was used. This was due to the unavailability of a bovine counterpart at that point, however, Gresser and his colleagues (1974), reported that hIFNα does indeed affect bovine cells as well. Cellular RNA was extracted and converted to complementary DNA, as described in section 7.3. Bovine IFIT transcripts were quantified relative to mock-infected cells. qPCR results (Figure 7A) were normalised to bovine GAPDH levels. We observed large variation in the transcriptional response, even in mock-infected cells. bIFITs 2, 3 and 5 mRNA levels did not change in response at any time point post bRSV infection. bIFIT1 was induced at 48 hours post-infection, but the variation is too high to make firm conclusions at this point. However, consistent with Gresser et al’s previous findings, bIFITs were responsive to 1000 units of hIFNα; all genes were highly induced (Figure 7B), although the fold expression increases varied greatly. bIFIT1 increased 10000-fold, followed by bIFIT2 and bIFIT3 with both having c. 700-fold increase. bIFIT5 mRNA expression was induced by c. 25-fold after treatment with hIFNα. This experiment was performed once and will be repeated. As a control for infection, quantification of viral RNA using qPCR will provide us with a clearer picture about the observed changes.
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{06. Chapter 1/Figs/01. Induction/07. a549_brsv_moi1.pdf}
+    \caption[Responses of A549 to bRSV WT and dSH.]{\textbf{Responses of A549 to bRSV WT and dSH.} Some filler text afterwards to not to forget.}
+    \label{Responses of A549 to bRSV WT and dSH.}
+\end{figure}
 
 Describe data: \newline
-asdasdas
+asdasdasd \newline
+Infection cells with WT bRSV induces IFITs more than infection with hRSV.  Infection with mutant bRSV viruses (at normal and low MOI) induces human IFITs but IFIT5, which is only responsive to MOI 1 dSH bRSV and MOI 0.001 dNS1/2 bRSV.
 
-UV inactivated bRSV causes no change for bMx1 and bIFIT2 and seems to downregulate bIFIT1,3,5. Low, mid, and high MOI (0.1, 1, 2) and two different time points (24 and 48 HPI) do not seem to influence the levels of any genes tested other than for bMx1 for wt ultracentrifugation purified bRSV 24 HPI MOI 1. I have one experiment where bRSV MOI 1 24 HPI downregulates all genes tested but it might be a technical error. 
-Very low MOI (0.001) wt bRSV along with MOI 1 dSH and very low MOI dNS1, dSN2 and dNS1/2 bRSV do not up or downregulate any genes tested in a biologically significant way.
+The low MOI infection causing induction are interesting as low MOI hRSV did not cause induction. Maybe bRSV is more potent of A549 cells?
 
 \begin{figure}
     \centering
-    \includegraphics[width=1\linewidth]{07. Chapter 2/Figs/02. Induction/03. mdbk_brsv_timepoints.pdf}
-    \caption[MDBK responses to bRSV.]{\textbf{MDBK responses to bRSV.} timepoints infection }
-    \label{MDBK responses to bRSV}
+    \includegraphics[width=1\linewidth]{06. Chapter 1/Figs/01. Induction/08. a549_brsv_dns.pdf}
+    \caption[Responses of A549 to bRSV dNSs.]{\textbf{Responses of A549 to bRSV dNSs.} Some filler text afterwards to not to forget.}
+    \label{Responses of A549 to bRSV dNSs.}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[width=1\linewidth]{07. Chapter 2/Figs/02. Induction/04. mdbk_brsv_uv_roxo.pdf}
-    \caption[MDBK responses to modified bRSV.]{\textbf{MDBK responses to modified bRSV.} asdf as asdf asdf asdf as asdf asdf assd }
-    \label{MDBK responses to modified bRS}
+    \includegraphics[width=1\linewidth]{06. Chapter 1/Figs/01. Induction/11. beas2b_brsv_moi1.pdf}
+    \caption[BEAS-2B responses to bRSV WT and dSH.]{BEAS-2B responses to bRSV WT and dSH.}
+    \label{BEAS-2B responses to bRSV WT and dSH.}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[width=1\linewidth]{07. Chapter 2/Figs/02. Induction/05. mdbk_brsv_moi1_dsh.pdf}
-    \caption[MDBK responses to dSH.]{\textbf{MDBK responses to dSH.} timepoints infection }
-    \label{MDBK responses to dSH}
+    \includegraphics[width=1\linewidth]{06. Chapter 1/Figs/01. Induction/12. beas2b_brsv_dns.pdf}
+    \caption[BEAS-2B responses to bRSV dNSs.]{BEAS-2B responses to bRSV dNSs.}
+    \label{BEAS-2B responses to bRSV dNSs.}
 \end{figure}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{07. Chapter 2/Figs/02. Induction/06. mdbk_brsv_low_moi.pdf}
-    \caption[MDBK responses to low MOI mutant bRSV.]{\textbf{MDBK responses to low MOI mutant bRSV.} asdf as asdf asdf asdf as asdf asdf assd }
-    \label{MDBK responses to low MOI mutant bRSV}
-\end{figure}
-
-
-
-\subsubsection{Validation in More Physiological Cell Lines} \label{Validation in More Physiological Cell Lines}
-Why beas2b \newline
-How it was cultured + all treatment the same as in a549
-
 
 
 
