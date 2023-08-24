@@ -42,22 +42,18 @@ I have a hypothesis that in bovine cells the IFITs are basally expressed to high
 
     
 \end{figure}
-\subsubsection{Responses of MDBK to bRSV} \label{Responses of MDBK to bRSV}
-
-
-The Madin-Darby bovine kidney (MDBK) cell line, derived from bovine renal epithelium in 1958 (\cite{Madin1958EstablishedOrigin}), is an established model system used in bovine virology studies. We assayed them for the induction potential of bovine \textit{IFITs}, alongside bovine \textit{Mx1} using bovine interferon alpha and LPS (bovine interferon-gamma was not available commercially). Bovine \textit{Mx1} was included in the analyses as it is a ISG, widely reported in immunology and virology studies (ADD SOME REFERENCES HERE FOR CRYING OUT LOUD), and because we saw minimal bovine \textit{IFIT} responses throughout the study and wanted to ensure the cell lines used had the internal pathways for ISG induction correctly functioning. Figure \ref{MDBK responses to bIFNa} shows the \textit{bIFIT} and \textit{bMx1} responses to the stimulation with bIFN\(\alpha\) at a concentration of 5 ng/mL (equivalent to 1,000 UI/mL of hIFN\(\alpha\)) for either 3 or 6 hours. Interestingly, we see a similar effect in induction amplitude but an opposing effect in time of stimulation to amplitude compared to hIFN\(\alpha\) induction in BEAS-2B cells (Figure \ref{BEAS-2B responses to hIFNa.}). DESCRIBE THE DATA ITSELF
-
-
 
 
 
 
 \subsubsection{Bovine \textit{IFITs} Responses to bRSV} \label{Bovine IFITs Responses to bRSV}
+
+
+The Madin-Darby bovine kidney (MDBK) cell line, derived from bovine renal epithelium in 1958 (\cite{Madin1958EstablishedOrigin}), is an established model system used in bovine virology studies. We assayed them for the induction potential of bovine \textit{IFITs}, alongside bovine \textit{Mx1} using bovine interferon alpha and LPS (bovine interferon-gamma was not available commercially). Bovine \textit{Mx1} was included in the analyses as it is a ISG, widely reported in immunology and virology studies (ADD SOME REFERENCES HERE FOR CRYING OUT LOUD), and because we saw minimal bovine \textit{IFIT} responses throughout the study and wanted to ensure the cell lines used had the internal pathways for ISG induction correctly functioning. Figure \ref{MDBK responses to bIFNa} shows the \textit{bIFIT} and \textit{bMx1} responses to the stimulation with bIFN\(\alpha\) at a concentration of 5 ng/mL (equivalent to 1,000 UI/mL of hIFN\(\alpha\)) for either 3 or 6 hours. Interestingly, we see a similar effect in induction amplitude but an opposing effect in time of stimulation to amplitude compared to hIFN\(\alpha\) induction in BEAS-2B cells (Figure \ref{BEAS-2B responses to hIFNa.}). DESCRIBE THE DATA ITSELF
+
 Old text:
 Alongside confirming the induction potential of bIFITs in MDBK cells, we assessed the effect of bovine respiratory syncytial virus (bRSV) on IFIT induction. As bRSV is a known inducer of the interferon response we expect bovine IFIT genes to be upregulated following infection. MDBK cells were infected with purified bRSV at MOI of 1 for 24 and 48 hours. As a positive control human IFNa was used. This was due to the unavailability of a bovine counterpart at that point, however, Gresser and his colleagues (1974), reported that hIFNa does indeed affect bovine cells as well. Cellular RNA was extracted and converted to complementary DNA, as described in section 7.3. Bovine IFIT transcripts were quantified relative to mock-infected cells. qPCR results (Figure 7A) were normalised to bovine GAPDH levels. We observed large variation in the transcriptional response, even in mock-infected cells. bIFITs 2, 3 and 5 mRNA levels did not change in response at any time point post bRSV infection. bIFIT1 was induced at 48 hours post-infection, but the variation is too high to make firm conclusions at this point. However, consistent with Gresser et al`s previous findings, bIFITs were responsive to 1000 units of hIFNa; all genes were highly induced (Figure 7B), although the fold expression increases varied greatly. bIFIT1 increased 10000-fold, followed by bIFIT2 and bIFIT3 with both having c. 700-fold increase. bIFIT5 mRNA expression was induced by c. 25-fold after treatment with hIFNa. This experiment was performed once and will be repeated. As a control for infection, quantification of viral RNA using qPCR will provide us with a clearer picture about the observed changes.
 
-Describe data: \newline
-asdasdas
 
 UV inactivated bRSV causes no change for bMx1 and bIFIT2 and seems to downregulate bIFIT1,3,5. Low, mid, and high MOI (0.1, 1, 2) and two different time points (24 and 48 HPI) do not seem to influence the levels of any genes tested other than for bMx1 for wt ultracentrifugation purified bRSV 24 HPI MOI 1. I have one experiment where bRSV MOI 1 24 HPI downregulates all genes tested but it might be a technical error. 
 Very low MOI (0.001) wt bRSV along with MOI 1 dSH and very low MOI dNS1, dSN2 and dNS1/2 bRSV do not up or downregulate any genes tested in a biologically significant way.
@@ -109,9 +105,34 @@ some text some text some text some text some text
 
 some text some text some text some text some text
 
-\subsubsection{Bovine responses to hRSV} \label{MDKB responses to hRSV}
+
+\myparagraph{Validation by analysing bRSV RNAseq dataset} \label{Validation by analysing bRSV RNAseq dataset}
 Describe data: \newline
-asdasdas
+asdasdas \newline
+Data showing that bIFITs are not differentially expressed in cells infected with dSH bRSV.
+
+This is a dataset that was present in Dalan`s group. Comparing responses at 16 and 40 HPI between WT bRSV vs Mock and dSH bRSV vs Mock. The dataset was previously analysed by a bioinformatician in Pirbright which yield 0 differentially expressed host genes. He however included viral genes in the analysis, which I assume affected the adjusted p values of the host genes due to the relative viral genes abundance. We tried to get in touch with him to discuss this but after several emails got no response. The re-analysis was done on raw annotated count data which had viral transcripts removed. Original analysis was done using EdgeR package, my re-analysis was with DESeq2 (both are valid way of doing DE analysis, EdgeR is more modular and harder to use).
+
+All 4 volcano plots, showing bi1-5 and bmx1, regardless where they are
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{07. Chapter 2//Figs/14. rnaseq volcano.png}
+    \caption[Volcano plot of DE genes in WT vs Mock 40 HPI.]{\textbf{Volcano plot of DE genes in WT vs Mock 40 HPI.} asdf asdf asdf asdf asdf asdf asdf asdf asdf }
+    \label{Volcano plot of DE genes in WT vs Mock 40 HPI}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{07. Chapter 2//Figs/14. rnaseq volcano.png}
+    \caption{Enter Caption}
+    \label{fig:enter-label}
+\end{figure}
+
+afterwards i would do a paragraph of the analysis as I did it so why not
+
+
+\subsubsection{Bovine \textit{IFITs} Responses to hRSV} \label{Bovine IFITs Responses to hRSV}
 
 Data show that ultracentrifugation purified hRSV causes no response in terms of bIFIT induction. Infection with normally purified virus does not cause induction either but hints at downregulation actually.
 
@@ -138,30 +159,6 @@ Validation in more physiologically relevant cell line. All genes but bIFIT2 resp
 Ultracentrifugation purified hRSV causes downregulation in IFITs but not bMx1 (where it causes no change), while infection with normally extracted hRSV cause no change in none of the genes tested. Infections with wt bRSV and dSH bRSV at the same MOI and HPI (1 and 24) cause slight downregulation in all genes tested.
 
 The trends seen with MDBK are kind of recapitulated.
-
-\myparagraph{Validation by analysing bRSV RNAseq dataset} \label{Validation by analysing bRSV RNAseq dataset}
-Describe data: \newline
-asdasdas \newline
-Data showing that bIFITs are not differentially expressed in cells infected with dSH bRSV.
-
-This is a dataset that was present in Dalan`s group. Comparing responses at 16 and 40 HPI between WT bRSV vs Mock and dSH bRSV vs Mock. The dataset was previously analysed by a bioinformatician in Pirbright which yield 0 differentially expressed host genes. He however included viral genes in the analysis, which I assume affected the adjusted p values of the host genes due to the relative viral genes abundance. We tried to get in touch with him to discuss this but after several emails got no response. The re-analysis was done on raw annotated count data which had viral transcripts removed. Original analysis was done using EdgeR package, my re-analysis was with DESeq2 (both are valid way of doing DE analysis, EdgeR is more modular and harder to use).
-
-Two volcanos
-
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{07. Chapter 2//Figs/14. rnaseq volcano.png}
-    \caption[Volcano plot of DE genes in WT vs Mock 40 HPI.]{\textbf{Volcano plot of DE genes in WT vs Mock 40 HPI.} asdf asdf asdf asdf asdf asdf asdf asdf asdf }
-    \label{Volcano plot of DE genes in WT vs Mock 40 HPI}
-\end{figure}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{07. Chapter 2//Figs/14. rnaseq volcano.png}
-    \caption{Enter Caption}
-    \label{fig:enter-label}
-\end{figure}
-
 
 \subsubsection*{Summary} \label{Summary-bovine-induction}
 i guess tie it all togeher
