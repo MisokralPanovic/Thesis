@@ -50,7 +50,7 @@
 \DeclareOption{fourier}{
   \ifsetFont
     \ClassWarning{PhDThesisPSnPDF}{Font selection conflict: A font package was
-      aleady specified. Please check the document class options in case you 
+      already specified. Please check the document class options in case you 
       have defined two fonts.}
   \else
     \PHD@fouriertrue
@@ -62,7 +62,7 @@
 \DeclareOption{customfont}{
   \ifsetFont
     \ClassWarning{PhDThesisPSnPDF}{Font selection conflict: A font package was
-      aleady specified. Please check the document class options in case you 
+      already specified. Please check the document class options in case you 
       have defined two fonts.}
   \else
     \setCustomFonttrue
@@ -78,7 +78,7 @@
 \DeclareOption{biblatex}{
   \ifsetBib
     \ClassWarning{PhDThesisPSnPDF}{Bibliography selection conflict: A
-      bibliography style aleady specified. Please check the document class
+      bibliography style already specified. Please check the document class
       options in case you have defined two bibliography styles.}
   \else
     \PHD@biblatextrue
@@ -89,7 +89,7 @@
 \DeclareOption{authoryear}{
   \ifsetBib
     \ClassWarning{PhDThesisPSnPDF}{Bibliography selection conflict: A
-      bibliography style aleady specified. Please check the document class
+      bibliography style already specified. Please check the document class
       options in case you have defined two bibliography styles.}
   \else
     \PHD@authoryeartrue
@@ -97,11 +97,11 @@
   \fi
 }
 
-\newif\ifPHD@numbered\PHD@numberedfalse       % Numbered citiation
+\newif\ifPHD@numbered\PHD@numberedfalse       % Numbered citation
 \DeclareOption{numbered}{
   \ifsetBib
     \ClassWarning{PhDThesisPSnPDF}{Bibliography selection conflict: A
-      bibliography style aleady specified. Please check the document class
+      bibliography style already specified. Please check the document class
       options in case you have defined two bibliography styles.}
   \else
     \PHD@numberedtrue
