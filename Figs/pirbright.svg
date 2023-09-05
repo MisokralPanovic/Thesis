@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="811"
+   width="932"
    height="417"
    xml:space="preserve"
    overflow="hidden"
@@ -8,6 +8,9 @@
    id="svg19"
    sodipodi:docname="pirbright.svg"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   inkscape:export-filename="pirbright.pdf"
+   inkscape:export-xdpi="130.53238"
+   inkscape:export-ydpi="130.53238"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -50,18 +53,18 @@
          height="1155469"
          id="rect6" /></clipPath></defs><g
      clip-path="url(#clip0)"
-     transform="translate(-1592 -323)"
+     transform="translate(-1471.8474,-322.99976)"
      id="g17"
      inkscape:export-filename="g17.pdf"
      inkscape:export-xdpi="600"
      inkscape:export-ydpi="600"><g
-       transform="matrix(0.000360892 0 0 0.000360892 1592 323)"
+       transform="matrix(3.60892e-4,0,0,3.60892e-4,1592,323)"
        id="g15"><g
          clip-path="url(#clip2)"
-         transform="matrix(1.0024 0 0 1 0.187145 -0.0130726)"
+         transform="matrix(1.0024,0,0,1,0.187145,-0.0130726)"
          id="g13"><use
            width="100%"
            height="100%"
            xlink:href="#img1"
-           transform="scale(2764.28 2764.28)"
+           transform="scale(2764.28)"
            id="use11" /></g></g></g></svg>
