@@ -1,5 +1,17 @@
 \subsection{Bovine \textit{IFIT} Responses to Activators of Innate Immune Response} \label{subsec:Bovine IFIT Responses to Activators of Innate Immune Response}
-The Madin-Darby bovine kidney (MDBK) cell line, derived from bovine renal epithelium in 1958 (\cite{Madin1958EstablishedOrigin}), is an established model system used in bovine virology studies. We assayed them for the induction potential of bovine \textit{IFITs}, alongside bovine \textit{Mx1} using bovine interferon alpha and LPS (bovine interferon-gamma was not available commercially). Bovine \textit{Mx1} was included in the analyses as it is a ISG, widely reported in immunology and virology studies (ADD SOME REFERENCES HERE FOR CRYING OUT LOUD), and because we saw minimal bovine \textit{IFIT} responses throughout the study and wanted to ensure the cell lines used had the internal pathways for ISG induction correctly functioning. Figure \ref{fig:MDBK responses to bIFNa} shows the \textit{bIFIT} and \textit{bMx1} responses to the stimulation with bIFN\(\alpha\) at a concentration of 5 ng/mL (equivalent to 1,000 UI/mL of hIFN\(\alpha\)) for either 3 or 6 hours. Interestingly, we see a similar effect in induction amplitude but an opposing effect in time of stimulation to amplitude compared to hIFN\(\alpha\) induction in BEAS-2B cells (Figure \ref{fig:BEAS-2B responses to hIFNa}). DESCRIBE THE DATA ITSELF ....
+The Madin-Darby bovine kidney (MDBK) cell line, derived from bovine renal epithelium in 1958 (\cite{Madin1958EstablishedOrigin}), is a well-established model system used in bovine virology studies. We assayed the cells for the induction potential of bovine \textit{IFITs}, alongside bovine \textit{Mx1} using bovine interferon alpha and LPS (bovine interferon-gamma was not available commercially). Bovine \textit{Mx1} was included in the analyses as it is a ISG, widely reported in immunology and virology studies (ADD SOME REFERENCES HERE FOR CRYING OUT LOUD), and because we saw minimal bovine \textit{IFIT} responses throughout the study and wanted to ensure the cell lines used had the internal pathways for ISG induction correctly functioning. Figure \ref{fig:MDBK responses to bIFNa} shows the \textit{bIFIT} and \textit{bMx1} responses to the stimulation with bIFN\(\alpha\) at a concentration of 5 ng/mL (equivalent to 1,000 UI/mL of hIFN\(\alpha\)) for either 3 or 6 hours. Interestingly, we see a similar effect in induction amplitude but an opposing effect in time of stimulation to amplitude compared to hIFN\(\alpha\) induction in BEAS-2B cells (Figure \ref{fig:BEAS-2B responses to hIFNa}). DESCRIBE THE DATA ITSELF ....
+
+
+all ifits:
+    sig at 3
+        1 highest, 2 3 the same, 5 lowest (like a549)
+    higher 3 than 6
+    1 sig at 6
+    bmx1 sig at both
+        3 double 1
+        6 even higher (4x)
+        shows that ifn stim worked and ifits are fast acting fast degrading
+        also shows mdbk ifits are competent and ifn cascades work
 
 normal unequal - bi1 bi2 bmx1
 
@@ -24,6 +36,11 @@ mdbk lps
 
 Neither bMx1 nor bIFITs are induced by LPS in the concentration range tested. 
 
+nothing responding to lps
+0.5 2.5 1, 2.5 2, 2.5 3 - inhibition by Half
+    while no response in bmx1 and 5
+    not biologically significant probs
+
 normal unequal - bi1 bi2 
 
 normal equal - bi3 bi5 bmx1
@@ -44,6 +61,11 @@ bt bifna
 (\cite{McClurkin1974ComparisonVirus})
 
 Validation in more physiologically relevant cell line. All genes but bIFIT2 respond to bIFN alpha 5 ng/mL for 3h; treatment for 24h cause no change in any of the genes; treatment for 6h downregulates IFITs but not bMx1. This shows that BT cells are responsive to IFN and have the capability to express bIFITs and bMx1.
+
+2 not responsive
+everything else sig induction at 3 and minimal induction for bmx1 and 5 at 24
+shows bt being ifit competent, ifn cascades work, fast action that doesnt last a day
+
 
 normal unequal - bi1 bi3 bi5 bmx1
 
@@ -73,6 +95,14 @@ timepoints data
 
 Low, mid, and high MOI (0.1, 1, 2) and two different time points (24 and 48 HPI) do not seem to influence the levels of any genes
 
+no biologicaly sig response
+very strong viral replication
+1 48 0.1 1 half increase; 2 half decrease
+2 48 2 half decrease
+3 and 5 nothing
+mx1 24 0.1 half increase; 48 2 half decrease
+viruses replicating well but not stimulating; 48 should be quite high titre based on growth curves and still nothing
+
 normal unequal - bi1 bi2  bi5 brsvn
 
 normal euqal - bi3 bmx1
@@ -90,6 +120,9 @@ mdbk uv roxo puri
 UV inactivated bRSV causes no change for bMx1 and bIFIT2 and seems to downregulate bIFIT1,3,5.
 
 other than for bMx1 for wt ultracentrifugation purified bRSV 24 HPI MOI 1. I have one experiment where bRSV MOI 1 24 HPI downregulates all genes tested but it might be a technical error. 
+
+
+
 
 normal unequal - bmx1 brsvn
 
@@ -113,21 +146,6 @@ normal unequal - bi1 bi2 bi3 bi5 brsvn
 
 normal euqal - bmx1
 
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{07. Chapter 2/Figs/02. Induction/06. mdbk_brsv_low_moi.pdf}
-    \caption[MDBK \textit{bIFIT} Response to Low MOI bRSV Infections.]{\textbf{MDBK \textit{bIFIT} Response to Low MOI bRSV Infections.} (a) \textit{bIFIT1}, (b) \textit{bIFIT2}, (c) \textit{bIFIT3}, (d) \textit{bIFIT5}, (e) \textit{bMx1}, and (f) \textit{bRSV N} gene expression levels were assessed using quantitative real-time PCR (qPCR) in MDBK cell line following infection with WT or \(\Delta\)NS1, \(\Delta\)NS2, and \(\Delta\)NS1/2 bRSV at MOIs of 0.001 for 24 hours post-infection. Relative expression values are normalized to standardized mock-treated samples. Median values are represented by red circles. The black dotted line represents mock expression levels, while the red dotted lines indicate biologically significant induction thresholds. Numeric values indicate the p-values compared to mock-treated samples.}
-    \label{fig:MDBK responses to low MOI mutant bRSV}
-\end{figure}
-
-low moi dnss mdbk
-
-Very low MOI (0.001) wt bRSV along with MOI 1 dSH and very low MOI dNS1, dSN2 and dNS1/2 bRSV do not up or downregulate any genes tested in a biologically significant way.
-
-normal unequal - bi5 bmx1 brsvn
-
-normal euqal - bi1 bi2 bi3 
-
 
 \begin{figure}
     \centering
@@ -143,6 +161,21 @@ Infections with wt bRSV and dSH bRSV at the same MOI and HPI (1 and 24) cause sl
 normal unequal - bi1 brsvn
 
 normal euqal - bi2 bi3 bi5 bmx1
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{07. Chapter 2/Figs/02. Induction/06. mdbk_brsv_low_moi.pdf}
+    \caption[MDBK \textit{bIFIT} Response to Low MOI bRSV Infections.]{\textbf{MDBK \textit{bIFIT} Response to Low MOI bRSV Infections.} (a) \textit{bIFIT1}, (b) \textit{bIFIT2}, (c) \textit{bIFIT3}, (d) \textit{bIFIT5}, (e) \textit{bMx1}, and (f) \textit{bRSV N} gene expression levels were assessed using quantitative real-time PCR (qPCR) in MDBK cell line following infection with WT or \(\Delta\)NS1, \(\Delta\)NS2, and \(\Delta\)NS1/2 bRSV at MOIs of 0.001 for 24 hours post-infection. Relative expression values are normalized to standardized mock-treated samples. Median values are represented by red circles. The black dotted line represents mock expression levels, while the red dotted lines indicate biologically significant induction thresholds. Numeric values indicate the p-values compared to mock-treated samples.}
+    \label{fig:MDBK responses to low MOI mutant bRSV}
+\end{figure}
+
+low moi dnss mdbk
+
+Very low MOI (0.001) wt bRSV along with MOI 1 dSH and very low MOI dNS1, dSN2 and dNS1/2 bRSV do not up or downregulate any genes tested in a biologically significant way.
+
+normal unequal - bi5 bmx1 brsvn
+
+normal euqal - bi1 bi2 bi3 
 
 \subsection{Bovine \textit{IFITs} Responses to hRSV} \label{subsec:Bovine IFITs Responses to hRSV}
 
