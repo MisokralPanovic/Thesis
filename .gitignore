@@ -1,2 +1,27 @@
 
 .vscode/extensions.json
+Thesis.aux
+Thesis.bcf
+Thesis.fdb_latexmk
+Thesis.fls
+Thesis.lof
+Thesis.log
+Thesis.lot
+Thesis.nlo
+Thesis.out
+Thesis.pdf
+Thesis.run.xml
+Thesis.synctex.gz
+Thesis.toc
+Thesis.bbl
+11. Discussion and Conclusion\discussion and conclusion.aux
+10. Chapter 5\Chapter 5.aux
+09. Chapter 4\ Chapter 4.aux
+08. Chapter 3\Chapter 3.aux
+07. Chapter 2\Chapter 2.aux
+06. Chapter 1\Chapter 1.aux
+05. Methods\methods.aux
+04. Introduction\introduction.aux
+03. Acknowedgments\acknowledgments.aux
+02. Abstract\abstract.aux
+01. Declaration\declaration.aux
