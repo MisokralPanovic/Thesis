@@ -378,32 +378,32 @@ RNAseq experiments comparing the transcript levels between control cells and cel
 \section{Statistical Analysis} \label{sec:Statistical Analysis}
 Statistical analysis was performed using R programming language (\cite{RCoreTeam2022R:Computing}) using the RStudio environment (\cite{RStudioTeam2022RStudio:RStudio}). The pipeline can be viewed in the following URL: http://rpubs.com/ogosimiso/995988. Initially, data was assessed visually using boxplots and Q-Q plots. Boxplots were used to roughly assess the normality, whereas Q-Q plots were used for rough equality of variance assumptions. A mathematical test of the normality of distribution was done using the Shapiro-Wilk normality test. This was performed on each individual condition as well as the whole dataset in its entirety. Mathematical assessment of equality of variance was done by Bartlett test of homogeneity of variances for normally distributed samples and by Levene's Test for Homogeneity of Variance (car package for R (\cite{Fox2019AnRegression})) for non-normally distributed samples. To obtain the final significance values various mathematical tests were used based on the number of comparisons and the previously established type of distribution and equality of variance. For a pair of samples with normal distribution and equal variance a two-sample t-test was conducted. For multiple comparisons of normally distributed data with equal variance analysis of variance (ANOVA) combined with Tukey multiple comparison of means was performed. For a pair of samples with non-normal distribution but equal variance, a two-sample t-test was conducted. For multiple comparisons of non-normally distributed data with equal variance a Kruskal-Wallis rank sum test was performed (dunn.test R package (\cite{Dinno2017Dunn.test:Sums})). For a single comparison of data which has normal distribution but non-equal variance a Welch Two Sample t-test was performed. For multiple comparisons of data with normal distribution but non-equal variance one-way analysis of means (not assuming equal variances) combined with Games-Howell test was performed (rstatix R package (\cite{Kassambara2022Rstatix:Tests})). 
 
-%acronyms
-\nomenclature[z-DMEM]{$DMEM$}{Dulbecco’s Modified Eagle’s Medium} 
-\nomenclature[z-FBS]{$FBS$}{Foetal Bovine Serum }    
-\nomenclature[z-PBS]{$PBS$}{Phosphate Buffered Saline}    
-\nomenclature[z-IFN]{$IFN$}{Interferon}  
-\nomenclature[z-ANOVA]{$ANOVA$}{Analysis of Variance} 
-\nomenclature[z-PCA]{$PCA$}{Principal Component Analysis} 
-\nomenclature[z-VST]{$VST$}{Variance Stabilizing Transformation} 
-\nomenclature[z-rlog]{$rlog$}{Regularized Logarithm} 
-\nomenclature[z-DAPI]{$DAPI$}{4,6-diamidino-2-phenylindole} 
-\nomenclature[z-BSA]{$BSA$}{Bovine Serum Albumin} 
-\nomenclature[z-PBST]{$PBST$}{PBS with 0.1\% Tween 20} 
-\nomenclature[z-PVDF]{$PVDF$}{polyvinylidene difluoride} 
-\nomenclature[z-TEMED]{$TEMED$}{tetramethylethylenediamine} 
-\nomenclature[z-APS]{$APS$}{ammonium persulphate}  
-\nomenclature[z-IP]{$IP$}{Immunoprecipitation}  
-\nomenclature[z-co-IP]{$co-IP$}{co-immunoprecipitation}  
-\nomenclature[z-TBE]{$TBE$}{Tris-Borate EDTA}  
-\nomenclature[z-ORFs]{$ORFs$}{Open Reading Frames}  
-\nomenclature[z-GFP]{$GFP$}{Green Fluorescent Protein}  
-\nomenclature[z-MOI]{$MOI$}{Multiplicity of Infection}  
-\nomenclature[z-PEG]{$PEG$}{Polyethylene Glycol}  
-\nomenclature[z-cDNA]{$cDNA$}{Complementary DNA}  
-\nomenclature[z-qPCR]{$qPCR$}{Quantitative Polymerase Chain Reaction}  
-\nomenclature[z-Ct]{$Ct$}{Cycle Threshold}  
-\nomenclature[z-MMLV RT]{$MMLV RT$}{Moloney Murine Leukaemia Virus Reverse Transcriptase}  
+%acronym
+\nomenclature[z-DMEM]{DMEM}{Dulbecco's Modified Eagle's Medium} 
+\nomenclature[z-FBS]{FBS}{Foetal Bovine Serum}    
+\nomenclature[z-PBS]{PBS}{Phosphate Buffered Saline}    
+\nomenclature[z-IFN]{IFN}{Interferon}  
+\nomenclature[z-ANOVA]{ANOVA}{Analysis of Variance} 
+\nomenclature[z-PCA]{PCA}{Principal Component Analysis} 
+\nomenclature[z-VST]{VST}{Variance Stabilizing Transformation} 
+\nomenclature[z-rlog]{rlog}{Regularized Logarithm} 
+\nomenclature[z-DAPI]{DAPI}{4,6-diamidino-2-phenylindole} 
+\nomenclature[z-BSA]{BSA}{Bovine Serum Albumin} 
+\nomenclature[z-PBST]{PBST}{PBS with 0.1\% Tween 20} 
+\nomenclature[z-PVDF]{PVDF}{polyvinylidene difluoride} 
+\nomenclature[z-TEMED]{TEMED}{tetramethylethylenediamine} 
+\nomenclature[z-APS]{APS}{ammonium persulphate}  
+\nomenclature[z-IP]{IP}{Immunoprecipitation}  
+\nomenclature[z-co-IP]{co-IP}{co-immunoprecipitation}  
+\nomenclature[z-TBE]{TBE}{Tris-Borate EDTA}  
+\nomenclature[z-ORFs]{ORFs}{Open Reading Frames}  
+\nomenclature[z-GFP]{GFP}{Green Fluorescent Protein}  
+\nomenclature[z-MOI]{MOI}{Multiplicity of Infection}  
+\nomenclature[z-PEG]{PEG}{Polyethylene Glycol}  
+\nomenclature[z-cDNA]{cDNA}{Complementary DNA}  
+\nomenclature[z-qPCR]{qPCR}{Quantitative Polymerase Chain Reaction}  
+\nomenclature[z-Ct]{Ct}{Cycle Threshold}  
+\nomenclature[z-MMLV RT]{MMLV RT}{Moloney Murine Leukaemia Virus Reverse Transcriptase}  
 
 %Words in text: 4832
 %Words in headers: 127
