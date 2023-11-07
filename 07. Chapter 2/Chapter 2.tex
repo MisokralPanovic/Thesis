@@ -15,14 +15,7 @@ validate data with rnaseq dataset analysis
 
 We hypothesised  bovine IFITs to be induced by human and bovine RSV infection. We aimed to systematically test this by initially confirming that our model cell lines are capable of IFIT induction following the treatment of known innate immune system activators such as interferon alpha, and LPS. We would then assess the IFIT induction during human and bovine RSV infection using a range of viral concentration and end assay time points. Lastly, we would validate this data in more physiologically relevant cell lines as well as using omics approaches.
 
-
-
 \section{Results} \label{sec:Results Chapter2}
-\subsection{Similarity Between Human and Bovine IFITs} \label{subsec:Similarity Between Human and Bovine IFITs}
-write about genomic regulation linking chapter 1
-write about protein sequence and looking at alphafold
-
-
 \subsection{Technology Establishment} \label{subsec:Technology Establishment}
 \subsubsection{Primer Design and Validation for Bovine \textit{IFIT} Quantification} \label{Primer Design and Validation for Bovine IFIT Quantification}
 Due to the initial lack of commercially available primers for the detection of bovine \textit{IFIT} transcripts at the outset of the project, I devised a panel comprising three primer sets (PS) for each bovine \textit{IFIT} gene. Detailed information about this process is outlined in Section \ref{subsec:Primer Design and Assay Setup}. In a nutshell, I inputted the coding sequences into the PrimerQuest software (Integrated DNA Technologies) to identify the most suitable oligonucleotides. To evaluate the amplification efficiencies of each primer set, I employed \textit{IFIT} DNA clones from a bovine ISG library as standards (accessible through a collaboration with CVR Glasgow). The outcomes are depicted in Figure \ref{fig:Validation of custom-made bIFIT qPCR primers}. The graph demonstrates that primer sets 1 exhibited the most favourable amplification efficiencies. All primer sets, except for \textit{bIFIT3}, yielded nearly impeccable amplification efficiencies of around 100\%. Consequently, they were chosen for subsequent experiments. While \textit{bIFIT3} primer sets demonstrated similar outcomes in terms of standard curve slopes and amplification efficiencies, PS1 consistently outperformed the others in repeated testing rounds (data not presented). As a result, it was singled out for further experimentation.
@@ -54,35 +47,6 @@ Although my colleagues in the Viral Glycoproteins Group from the Pirbright Insti
 \end{figure}
 
 \input{07. Chapter 2/Subchapters/01. bovine induction}
-
-\subsection{RNA-Seq Analysis} \label{subsec:RNA-Seq Analysis}
-Data showing that bIFITs are not differentially expressed in cells infected with dSH bRSV.
-
-This is a dataset that was present in Dalan`s group. Comparing responses at 16 and 40 HPI between WT bRSV vs Mock and dSH bRSV vs Mock. The dataset was previously analysed by a bioinformatician in Pirbright which yield 0 differentially expressed host genes. He however included viral genes in the analysis, which I assume affected the adjusted p values of the host genes due to the relative viral genes abundance. We tried to get in touch with him to discuss this but after several emails got no response. The re-analysis was done on raw annotated count data which had viral transcripts removed. Original analysis was done using EdgeR package, my re-analysis was with DESeq2 (both are valid way of doing DE analysis, EdgeR is more modular and harder to use).
-
-All 4 volcano plots, showing bi1-5 and bmx1, regardless where they are
-
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{07. Chapter 2/Figs/03. Bioinformatics Analysis/01. rnaseq volcano.png}
-    \caption[Volcano plot of DE genes in WT vs Mock 40 HPI.]{\textbf{Volcano plot of DE genes in WT vs Mock 40 HPI.} asdf asdf asdf asdf asdf asdf asdf asdf asdf }
-    \label{fig:Volcano plot of DE genes in WT vs Mock 40 HPI}
-\end{figure}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{07. Chapter 2/Figs/03. Bioinformatics Analysis/01. rnaseq volcano.png}
-    \caption{Enter Caption}
-    \label{fig:volcano2}
-\end{figure}
-
-afterwards i would do a paragraph of the analysis as I did it so why not
-
-\subsection{Meta-Analysis} \label{subsec:Meta-Analysis bifit}
-\subsubsection{Meta-Analysis}
-lorem ipsum
-
-
 
 \section{Discussion} \label{sec:Discussion Chapter2}
 Recap bovine
