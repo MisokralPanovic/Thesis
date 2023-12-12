@@ -2,12 +2,12 @@
 \section{Background and Aims} \label{sec:Background and Aims Chapter2}
 From published literature, it is evident that induced human \textit{IFIT} expression negatively impacts RSV replication. The results obtained in Chapter \ref{ch:Assessment of Transcriptional Induction of Human IFITs in the Context of RSV} confirm differential expression of human \textit{IFITs} in response to both hRSV and bRSV infections. However, an investigation into \textit{in vitro} bovine \textit{IFIT} induction and its potential influence on bovine RSV has not been undertaken to date.
 
-Our hypothesis posited that bovine \textit{IFITs} would be induced by both human and bovine RSV, similar to the observations made for human \textit{IFITs} in the previous chapter. Our objective was to systematically test this hypothesis, employing methodologies akin to those used in Chapter \ref{ch:Assessment of Transcriptional Induction of Human IFITs in the Context of RSV}. Initially, our efforts were directed towards preparing essential technological materials and information, such as qPCR primers for \textit{bIFIT} detection. Presently, no commercially available primers exist for this purpose. Additionally, we aimed to assess bRSV growth in various model bovine cell lines employed in our study. Subsequently, we sought to confirm the capability of our model cell lines to induce \textit{IFITs} following the treatment with known activators of the innate immune system, such as IFN\(\alpha\) and LPS. Following this, our strategy involved evaluating \textit{IFIT} induction during both human and bovine RSV infections, utilizing a range of viral concentrations and various end assay time points.
+Our hypothesis posited that bovine \textit{IFITs} would be induced by both human and bovine RSV, similar to the observations made for human \textit{IFITs} in the previous chapter. Our objective was to systematically test this hypothesis, employing methodologies akin to those used in Chapter \ref{ch:Assessment of Transcriptional Induction of Human IFITs in the Context of RSV}. Initially, our efforts were directed towards preparing essential technological materials and information, such as qPCR primers for \textit{bIFIT} detection. Additionally, we aimed to assess bRSV growth in various model bovine cell lines employed in our study. Subsequently, we sought to confirm the capability of our model cell lines to induce \textit{IFITs} following the treatment with known activators of the innate immune system, such as IFN\(\alpha\) and LPS. Following this, our strategy involved evaluating \textit{IFIT} induction during both human and bovine RSV infections, utilizing a range of viral concentrations and various end assay time points.
 
 \section{Results} \label{sec:Results Chapter2}
 \subsection{Technology Establishment} \label{subsec:Technology Establishment}
 \subsubsection{Primer Design and Validation for Bovine \textit{IFIT} Quantification} \label{Primer Design and Validation for Bovine IFIT Quantification}
-Due to the initial lack of commercially available primers for the detection of bovine \textit{IFIT} transcripts at the outset of the project, we devised a panel comprising three primer sets (PS) for each bovine \textit{IFIT} gene. Detailed information about this process is outlined in Section \ref{subsec:Primer Design and Assay Setup}. Briefly, we inputted the coding sequences into the PrimerQuest software (Integrated DNA Technologies) to identify the most suitable oligonucleotides. To evaluate the amplification efficiencies of each primer set, we employed serial dilutions of \textit{IFIT} DNA clones from a bovine ISG library as standards (accessible through a collaboration with CVR Glasgow). The outcomes are depicted in Figure \ref{fig:Validation of custom-made bIFIT qPCR primers}. The graph demonstrates that primer sets 1 exhibited the most favourable amplification efficiencies. All primer sets, except for \textit{bIFIT3}, yielded amplification efficiencies of around 100\%. Consequently, they were chosen for subsequent experiments. While \textit{bIFIT3} primer sets demonstrated similar outcomes in terms of standard curve slopes and amplification efficiencies, PS1 consistently outperformed the others in repeated testing rounds (data not presented). As a result, it was selected for further experimentation.
+We devised a panel of three qPCR primer sets (PS) for each bovine \textit{IFIT} gene. Detailed information about this process is outlined in Section \ref{subsec:Primer Design and Assay Setup}. Briefly, we inputted the coding sequences into the PrimerQuest software (Integrated DNA Technologies) to identify the most suitable oligonucleotides. To evaluate the amplification efficiencies of each primer set, we employed serial dilutions of \textit{IFIT} DNA clones from a bovine ISG library as standards (accessible through a collaboration with CVR Glasgow). The outcomes are depicted in Figure \ref{fig:Validation of custom-made bIFIT qPCR primers}. The graph demonstrates that primer sets 1 exhibited the most favourable amplification efficiencies. All primer sets, except for \textit{bIFIT3}, yielded amplification efficiencies of around 100\%. Consequently, they were chosen for subsequent experiments. While \textit{bIFIT3} primer sets demonstrated similar outcomes in terms of standard curve slopes and amplification efficiencies, PS1 consistently outperformed the others in repeated testing rounds (data not presented). As a result, it was selected for further experimentation.
 
 \begin{figure}
     \centering
@@ -16,12 +16,12 @@ Due to the initial lack of commercially available primers for the detection of b
     \label{fig:Validation of custom-made bIFIT qPCR primers}
 \end{figure}
 
-The PSs behaviour was monitored throughout the project, as fresh standard curves were created per experiment. Figure \ref{fig:The Performance of Custom Made Primer Sets Over Time} shows that the average data is consistent with what was observed in initial testing (Figure \ref{fig:Validation of custom-made bIFIT qPCR primers}), however, there were per experiment deviations in slope angles for each of the selected primer pairs. The underlying amplification efficiencies stayed consistent, as is highlighted by the averaged efficiencies displayed. The initial \textit{bIFIT3} PSs differential amplification slopes were different compared to the other \textit{bIFIT} PSs, as well as the variable nature of PSs performance throughout the project. This prohibited the usage of \(\Delta\)\(\Delta\)Ct methodologies for transcript quantification as the increase in cycle threshold would not be proportional to the decrease of transcript abundance between the \textit{bIFITs}, and thus a different methodology had to be adopted. This is described in detail in Section \ref{subsec:Data Processing}. In short, the copy numbers were deducted from standard curves and factorised by the relative abundance of bovine \textit{GAPDH}. This ensured the slope-independent establishment of relative expression values, mirroring and complementing data from \(\Delta\)\(\Delta\)Ct methodologies.
+The PSs behaviour was monitored throughout the project, as fresh standard curves were created per experiment. Figure \ref{fig:The Performance of Custom Made Primer Sets Over Time} shows that the average data is consistent with what was observed in initial testing (Figure \ref{fig:Validation of custom-made bIFIT qPCR primers}), however, there were per experiment deviations in slope angles for each of the selected primer pairs. The underlying amplification efficiencies stayed consistent, as is highlighted by the averaged efficiencies displayed. The initial \textit{bIFIT3} PSs amplification slopes were different compared to the other \textit{bIFIT} PSs. They as well presented a more variable nature of its amplification efficiencies throughout the project. This prohibited the usage of \(\Delta\)\(\Delta\)Ct methodologies for transcript quantification as the increase in cycle threshold would not be proportional to the decrease of transcript abundance between the \textit{bIFITs}, and thus a different methodology had to be adopted. This is described in detail in Section \ref{subsec:Data Processing}. In short, the copy numbers were deducted from standard curves and factorised by the relative abundance of bovine \textit{GAPDH}. This ensured the slope-independent establishment of relative expression values, mirroring and complementing data from \(\Delta\)\(\Delta\)Ct methodologies.
 
 \begin{figure}
     \centering
     \includegraphics[width=1\linewidth]{07. Chapter 2/Figs/01. Technologies/03. standard curves behaviour.pdf}
-    \caption[The Performance of Custom-Made Primer-Sets Over Time.]{\textbf{The Performance of Custom-Made Primer-Sets Over Time.} During the experiments with custom-made \textit{bIFIT} qPCR primers, standard curves were repeated. Here, the underlying average amplification efficiencies and standard curves, along with the individual data, from all the experiments and coloured by the experiment are displayed.}
+    \caption[The Performance of Custom-Made Primer-Sets Over Time.]{\textbf{The Performance of Custom-Made Primer-Sets Over Time.} Fresh standard curves were prepared during experiments with custom-made \textit{bIFIT} qPCR primers. The figure illustrates the average amplification efficiencies and standard curves compiled across all experiments, with individual experiments represented by distinct colors.}
     \label{fig:The Performance of Custom Made Primer Sets Over Time}
 \end{figure}
 
@@ -47,6 +47,25 @@ Furthermore, we aimed to explore if the observed host restriction of RSV \textit
 
 
 more about viral inhibition than purification problem
+
+less about the NSs here
+
+\cite{Cui2022ThePathway} - mdbk reacting to LPS
+
+
+
+why are bovine ifits not expressed 
+- primers rubbish
+- cells rubbish
+- bRSV better repressive than hrsv at inhibiting innate immune response
+- higher basal expression
+
+
+
+
+
+
+
 
 
 
