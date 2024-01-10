@@ -1,7 +1,7 @@
 \chapter{Materials and Methods} \label{ch:Materials and Methods}
 \section{Cell Culture} \label{sec:Cell Culture}
 \subsection{Cell Culture Conditions} \label{subsec:Cell Culture Conditions}
-All cell lines, as outlined in Table \ref{tab:Cell Lines Table}, underwent cultivation in cell culture flasks (Corning) under standardised conditions: 37°C within a 5\% \ch{CO2} atmosphere. With the exception of BEAS2B, which followed a distinct protocol, all cell lines were sustained in complete Dulbecco’s Modified Eagle's Medium (DMEM; Sigma-Aldrich). This medium was fortified with 10\% Foetal Bovine Serum (FBS, Sigma-Aldrich), 1\% L-Glutamine (Sigma-Aldrich), and a 1\% penicillin and streptomycin mixture (TermoFisher). In contrast, the BEAS2B cell line adhered to a specialised regimen, being cultured in LHC basal medium (TermoFisher) supplemented with 10\% FBS (Sigma-Aldrich), 1\% L-Glutamine (Sigma-Aldrich), and 1\% penicillin and streptomycin mixture (TermoFisher).
+All cell lines, as outlined in Table \ref{tab:Cell Lines Table}, underwent cultivation in cell culture flasks (Corning) under standardised conditions: 37°C within a 5\% \ch{CO2} atmosphere. With the exception of BEAS2B, which followed a distinct protocol, all cell lines were sustained in complete Dulbecco’s modified Eagle's medium (DMEM; Sigma-Aldrich). This medium was fortified with 10\% foetal bovine serum (FBS, Sigma-Aldrich), 1\% L-glutamine (Sigma-Aldrich), and a 1\% penicillin and streptomycin mixture (TermoFisher). In contrast, the BEAS2B cell line adhered to a specialised regimen, being cultured in LHC basal medium (TermoFisher) supplemented with 10\% FBS (Sigma-Aldrich), 1\% L-glutamine (Sigma-Aldrich), and 1\% penicillin and streptomycin mixture (TermoFisher).
 
 \begin{table}
   \centering
@@ -10,7 +10,7 @@ All cell lines, as outlined in Table \ref{tab:Cell Lines Table}, underwent culti
     {\textbf{Cell Line}} &
   {\textbf{Description}} &
   {\textbf{Source}} \\ \midrule
-    VERO & Monkey Kidney Epithelial Cells & \\ 
+    Vero & Monkey Kidney Epithelial Cells & \\ 
     A549 & Human Alveolar Epithelial Cancer Cells &   \\
     HEK293T & Human Embryonic Kidney Cells &  \\ 
     MDBK & Madin-Darby Bovine Kidney Cells &  \\
@@ -25,7 +25,7 @@ All cell lines, as outlined in Table \ref{tab:Cell Lines Table}, underwent culti
 \end{table}
 
 \subsection{Passaging and Seeding Cells} \label{subsec:Passaging and Seeding Cells}
-All cell lines were cultivated until approximately 80\% confluency. Subsequently, the growth media were aspirated, and cells were rinsed with sterile Phosphate Buffered Saline (PBS). Cell detachment from the culture flasks was achieved using Trypsin/EDTA solution (Life Technologies). Following complete detachment, cells were appropriately diluted in complete media, and 5\% of the cell population was transferred to a new flask for subsequent passaging. The remaining cells were utilised for seeding in experiments.
+All cell lines were cultivated until approximately 80\% confluency. Subsequently, the growth media were aspirated, and cells were rinsed with sterile phosphate buffered saline (PBS). Cell detachment from the culture flasks was achieved using trypsin/EDTA solution (Life Technologies). Following complete detachment, cells were appropriately diluted in complete media, and 5\% of the cell population was transferred to a new flask for subsequent passaging. The remaining cells were utilised for seeding in experiments.
 
 \subsection{Transfecting Cells} \label{subsec:Transfecting Cells}
 Plasmids were transfected into well-adhered cells (>6 hours post-seeding) using TransIT-X2 (Geneflow). Plasmid DNA was diluted in Opti-MEM (ThermoFisher), and TransIT-X2 was added in a 1:2 ratio ($\mu$g of DNA to $\mu$L of TransIT-X2). The mixture was vortexed and then incubated at room temperature for 40 minutes. Subsequently, the transfection mix was added dropwise to the cells and incubated at 37°C with 5\% \ch{CO2} for the required duration to facilitate protein expression.
@@ -296,7 +296,7 @@ Mouse   Igg & Goat   & Invitrogen              & 1:10000 \\ \bottomrule
 \section{Statistical Analysis} \label{sec:Statistical Analysis}
 Statistical analysis was conducted using the R programming language \cite{RCoreTeam2022R:Computing} within the RStudio environment \cite{RStudioTeam2022RStudio:RStudio}. URL http://rpubs.com/ogosimiso/995988 hosts the entire statistical analysis pipeline. Initially, data were visually assessed using boxplots and Q-Q plots. Boxplots provided a rough evaluation of normality, while Q-Q plots were employed for a preliminary assessment of the equality of variances. The normality of distribution was further tested using the Shapiro-Wilk normality test, performed individually for each condition and for the entire dataset. The equality of variance was evaluated through the Bartlett test of homogeneity of variances for normally distributed samples and Levene's Test for Homogeneity of Variance (car package for R \cite{Fox2019AnRegression}) for non-normally distributed samples. To derive final significance values, various statistical tests were applied based on the number of comparisons and the distribution and equality of variances. For a pair of samples with normal distribution and equal variance, a two-sample t-test was conducted. Multiple comparisons of normally distributed data with equal variance were performed using analysis of variance (ANOVA) combined with Tukey's multiple comparisons of means. For a pair of samples with non-normal distribution but equal variance, a two-sample t-test was employed. Multiple comparisons of non-normally distributed data with equal variance were subjected to the Kruskal-Wallis rank sum test (dunn.test R package \cite{Dinno2017Dunn.test:Sums}). For a single comparison of data with a normal distribution but non-equal variance, a Welch Two-Sample t-test was executed. Multiple comparisons of data with normal distribution but non-equal variance were subjected to one-way analysis of means (not assuming equal variances), combined with the Games-Howell test (rstatix R package \cite{Kassambara2022Rstatix:Tests}).
 
-%Words in text: 3891
+%Words in text: 3895
 %Words in headers: 116
 %Words outside text (captions, etc.): 61
-%total = 4068
+%total = 4072
