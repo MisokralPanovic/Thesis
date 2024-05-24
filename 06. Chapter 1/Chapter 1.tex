@@ -8,7 +8,57 @@ We hypothesised human \textit{IFITs} to be induced by human RSV infection, which
 \input{06. Chapter 1/Subchapters/01. human induction}
 
 \section{Conclusions} \label{sec:Conclusions Chapter 1}
-Our experiments reveal the induction of human \textit{IFITs} in both A549 and BEAS2B cell lines, albeit with a more moderate response observed in BEAS2B. Further literature research uncovered that the BEAS2B cell line maintains higher basal expression of interferon-stimulated genes, providing a potential explanation for our observations \cite{Seng2014HighResistance}. Notably, both cell lines exhibit a time-dependent response to IFN$\upalpha$ stimulation in an inverse manner, indicating that \textit{hIFITs} are acute responders to IFN$\upalpha$ treatment. Interestingly, the varying induction magnitudes of \textit{IFITs} between the cell lines reveals that while \textit{IFIT5} shows the lowest induction levels in both cell lines, A549 has \textit{IFIT1} as the highest-induced IFIT, contrasting with BEAS2B, where \textit{IFIT2} was induced to the highest level. Additional A549 experiments demonstrate that LPS incubation stimulates \textit{IFIT} induction, but the magnitude, especially in comparison to other stimulants, appears biologically insignificant. Remarkably, IFN$\upgamma$ consistently elicits \textit{IFIT} induction in a concentration-independent manner, manifesting a uniform induction magnitude across various \textit{IFITs}—a characteristic not observed with other stimulants. Initially, these results were surprising, given our assumption that IFN$\upgamma$-mediated signalling was pertinent only to myeloid cell lines, a classification the A549 cell line does not fall under. However, published evidence on IFN$\upgamma$ receptor expression more broadly across cell types \cite{Ivashkiv2018IFN:Immunotherapy} and, more specifically, transcriptomic data in the A549 cell line reported in the Human Protein Atlas \cite{Uhlen2015Tissue-basedProteome}, corroborate the presence of IFN$\upgamma$ receptor expression in A549 cells. Moreover, transfected poly I:C induces \textit{IFITs} to levels surpassing those elicited by other tested innate immune system stimulants.tem stimulants.
+Our experiments reveal the induction of human \textit{IFITs} in both A549 and BEAS2B cell lines, albeit with a more moderate response observed in BEAS2B. The induction trends are summarised in Table \ref{tab:Summary of Human IFIT Responses to Activators of Innate Immune Response.}. Further literature research uncovered that the BEAS2B cell line maintains higher basal expression of interferon-stimulated genes, providing a potential explanation for our observations \cite{Seng2014HighResistance}. Notably, both cell lines exhibit a time-dependent response to IFN$\upalpha$ stimulation in an inverse manner, indicating that \textit{hIFITs} are acute responders to IFN$\upalpha$ treatment. Interestingly, the varying induction magnitudes of \textit{IFITs} between the cell lines reveals that while \textit{IFIT5} shows the lowest induction levels in both cell lines, A549 has \textit{IFIT1} as the highest-induced IFIT, contrasting with BEAS2B, where \textit{IFIT2} was induced to the highest level. Additional A549 experiments demonstrate that LPS incubation stimulates \textit{IFIT} induction, but the magnitude, especially in comparison to other stimulants, appears biologically insignificant. Remarkably, IFN$\upgamma$ consistently elicits \textit{IFIT} induction in a concentration-independent manner, manifesting a uniform induction magnitude across various \textit{IFITs}—a characteristic not observed with other stimulants. Initially, these results were surprising, given our assumption that IFN$\upgamma$-mediated signalling was pertinent only to myeloid cell lines, a classification the A549 cell line does not fall under. However, published evidence on IFN$\upgamma$ receptor expression more broadly across cell types \cite{Ivashkiv2018IFN:Immunotherapy} and, more specifically, transcriptomic data in the A549 cell line reported in the Human Protein Atlas \cite{Uhlen2015Tissue-basedProteome}, corroborate the presence of IFN$\upgamma$ receptor expression in A549 cells. Moreover, transfected poly I:C induces \textit{IFITs} to levels surpassing those elicited by other tested innate immune system stimulants.
+
+\begin{table}
+    \centering
+    \begin{tabular}{lllll}
+    \hline
+        \textbf{Cell Line} & \textbf{IFIT} & \textbf{Treatment} & \textbf{Figure} & \textbf{Trend} \\ \hline
+        A549 & IFIT1 & hIFNa 1000 IU 6h & Figure 3.1 & \(\uparrow\)\(\uparrow\) \\ 
+        A549 & IFIT1 & hIFNa 1000 IU 24h & Figure 3.1 & \(\uparrow\)\(\uparrow\) \\ 
+        A549 & IFIT1 & hIFNg 500 IU 6h & Figure 3.2 & \(\uparrow\) \\ 
+        A549 & IFIT1 & hIFNg 1000 IU 6h & Figure 3.2 & \(\uparrow\) \\ 
+        A549 & IFIT1 & hIFNg 2000 IU 6h & Figure 3.2 & \(\uparrow\) \\ 
+        A549 & IFIT1 & LPS 5 ng/mL 6h & Figure 3.3 & \(\nearrow\) \\ 
+        A549 & IFIT1 & LPS 5000 ng/mL 6h & Figure 3.3 & \(\nearrow\) \\ 
+        A549 & IFIT1 & poly I:C 2 ug 24h & Figure 3.4 & \(\uparrow\)\(\uparrow\)\(\uparrow\) \\ 
+        BEAS2B & IFIT1 & hIFNa 1000 IU 3h & Figure 3.5 & \(\rightarrow\) \\ 
+        BEAS2B & IFIT1 & hIFNa 1000 IU 24h & Figure 3.5 & \(\nearrow\) \\ 
+        A549 & IFIT2 & hIFNa 1000 IU 6h & Figure 3.1 & \(\uparrow\) \\ 
+        A549 & IFIT2 & hIFNa 1000 IU 24h & Figure 3.1 & \(\uparrow\) \\ 
+        A549 & IFIT2 & hIFNg 500 IU 6h & Figure 3.2 & \(\uparrow\) \\ 
+        A549 & IFIT2 & hIFNg 1000 IU 6h & Figure 3.2 & \(\uparrow\) \\ 
+        A549 & IFIT2 & hIFNg 2000 IU 6h & Figure 3.2 & \(\uparrow\) \\ 
+        A549 & IFIT2 & LPS 5 ng/mL 6h & Figure 3.3 & \(\nearrow\) \\ 
+        A549 & IFIT2 & LPS 5000 ng/mL 6h & Figure 3.3 & \(\uparrow\) \\ 
+        A549 & IFIT2 & poly I:C 2 ug 24h & Figure 3.4 & \(\uparrow\)\(\uparrow\)\(\uparrow\) \\ 
+        BEAS2B & IFIT2 & hIFNa 1000 IU 3h & Figure 3.5 & \(\searrow\) \\ 
+        BEAS2B & IFIT2 & hIFNa 1000 IU 24h & Figure 3.5 & \(\uparrow\) \\ 
+        A549 & IFIT3 & hIFNa 1000 IU 6h & Figure 3.1 & \(\uparrow\) \\ 
+        A549 & IFIT3 & hIFNa 1000 IU 24h & Figure 3.1 & \(\uparrow\) \\ 
+        A549 & IFIT3 & hIFNg 500 IU 6h & Figure 3.2 & \(\uparrow\) \\ 
+        A549 & IFIT3 & hIFNg 1000 IU 6h & Figure 3.2 & \(\uparrow\) \\ 
+        A549 & IFIT3 & hIFNg 2000 IU 6h & Figure 3.2 & \(\uparrow\) \\ 
+        A549 & IFIT3 & LPS 5 ng/mL 6h & Figure 3.3 & \(\nearrow\) \\ 
+        A549 & IFIT3 & LPS 5000 ng/mL 6h & Figure 3.3 & \(\uparrow\) \\ 
+        A549 & IFIT3 & poly I:C 2 ug 24h & Figure 3.4 & \(\uparrow\)\(\uparrow\) \\ 
+        BEAS2B & IFIT3 & hIFNa 1000 IU 3h & Figure 3.5 & \(\rightarrow\) \\ 
+        BEAS2B & IFIT3 & hIFNa 1000 IU 24h & Figure 3.5 & \(\uparrow\) \\ 
+        A549 & IFIT5 & hIFNa 1000 IU 6h & Figure 3.1 & \(\nearrow\) \\ 
+        A549 & IFIT5 & hIFNa 1000 IU 24h & Figure 3.1 & \(\nearrow\) \\ 
+        A549 & IFIT5 & hIFNg 500 IU 6h & Figure 3.2 & \(\uparrow\) \\ 
+        A549 & IFIT5 & hIFNg 1000 IU 6h & Figure 3.2 & \(\nearrow\) \\ 
+        A549 & IFIT5 & hIFNg 2000 IU 6h & Figure 3.2 & \(\uparrow\) \\ 
+        A549 & IFIT5 & LPS 5 ng/mL 6h & Figure 3.3 & \(\nearrow\) \\ 
+        A549 & IFIT5 & LPS 5000 ng/mL 6h & Figure 3.3 & \(\uparrow\) \\ 
+        A549 & IFIT5 & poly I:C 2 ug 24h & Figure 3.4 & \(\uparrow\) \\ 
+        BEAS2B & IFIT5 & hIFNa 1000 IU 3h & Figure 3.5 & \(\rightarrow\) \\ 
+        BEAS2B & IFIT5 & hIFNa 1000 IU 24h & Figure 3.5 & \(\nearrow\) \\ \hline
+    \end{tabular}
+    \caption[Summary of Human \textit{IFIT} Responses to Activators of Innate Immune Response.]{\textbf{Summary of Human \textit{IFIT} Responses to Activators of Innate Immune Response.} Trend arrows are indicative of the magnitude of the observed abundances, relative to the mock-treated values. Strong downregulation ($\downarrow$) for values between 0.062-0.25; mild downregulation ($\searrow$) for values between 0.25-0.5; no difference ($\rightarrow$) for values between 0.5-1.5; mild upregulation ($\nearrow$) for values between 1.5-4; moderate upregulation ($\uparrow$) for values between 4-64; strong upregulation ($\uparrow$$\uparrow$) for values between 64-258; very strong upregulation ($\uparrow$$\uparrow$$\uparrow$) for values between 258-1024.}
+    \label{tab:Summary of Human IFIT Responses to Activators of Innate Immune Response.}
+\end{table}
 
 Further, we confirmed that high MOI hRSV infection, but not low MOI infection, induces \textit{hIFIT} expression. We observed a concentration and time-dependent effect, which was maintained for at least 48 HPI, for all \textit{hIFITs} but \textit{hIFIT1}, which nevertheless showed the most robust induction out of all the genes tested. We confirmed that this induction isn't due to cellular contaminants from the viral preparation step, as infecting cells with purified virus induced similar patterns of gene expression. In A549, this induction was greatly diminished following pharmacological blockage of the interferon receptor, and completely abolished by UV-inactivation of hRSV, indicating the necessity of RSV replication for the initial \textit{IFIT} induction and functional interferon signalling for a robust \textit{IFIT} response. Most likely infected cells initiate an innate immune response, which also induces \textit{IFIT} locally and results in interferon production. This is then sensed by surrounding cells by paracrine interferon signalling, which in turn prophylactically induces \textit{IFIT} in those cells. This data was mirrored in the BEAS2B cell line, with minor discrepancies in the overall magnitude of \textit{IFIT} induction—aligning with the induction potential by hIFN$\upalpha$ and apparent \textit{IFIT} downregulation in cells infected with hRSV while the interferon receptor was pharmacologically inhibited. This suggests the requirement of basal interferon sensing for the observed basal \textit{IFIT} expression in mock-treated cells. Intriguingly, the induction observed by transfection of poly I:C wasn't observed when infecting cells with hRSV while inhibiting the interferon receptor, hinting at the induction during poly I:C transfection being caused by subsequent interferon signalling, not solely internal foreign nucleic acid detection.
 
@@ -17,6 +67,11 @@ In A549, both bRSV WT and mutants induced \textit{hIFIT} expression, irrespectiv
 Another intriguing observation from this part of the study is the differential induction patterns among \textit{IFITs} when responding to stimuli. In A549, \textit{IFIT1} consistently emerges as the highest inducer, while \textit{IFIT2} and \textit{IFIT3} show similar induction patterns and magnitudes. In the BEAS2B cell line, these patterns remain fairly similar, but at times \textit{IFIT1} isn't the highest inducer. \textit{hIFIT5} seems to be consistently the worst induced IFIT in both cell lines. Notably, the maximal induction of \textit{hIFIT5} observed in this study seems 10-16 fold, an order of magnitude lower than what's observed for other \textit{hIFITs}. While the existing literature posits that IFITs should share genomic regulatory elements \cite{Lou2009IFR-9/STAT2STAT1}, our empirical data indicates potential disparities in both promoter and enhancer activities. Attempting to elucidate these distinctions, we turned to the IFIT promoters and enhancers data available in the GeneCards database \cite{Stelzer2016TheAnalyses, Fishilevich2017GeneHancer:GeneCards}. However, the intricacy of the dataset, coupled with constraints in time and expertise, impeded a comprehensive analysis. Nevertheless, our initial pre-analysis aligns with our experimental findings and suggests that the regulation of \textit{IFIT} expression is intricate, exhibiting variability, and appears to be \textit{IFIT}-specific (data not shown).
 
 Overall, our data suggest that RSV infection, irrespective of species, robustly induces \textit{hIFITs}, potentially enabling them to exert antiviral activity against RSV. To validate these findings comprehensively, future studies should encompass a broader range of concentrations and treatment durations for both stimulants and RSV, while expanding the repertoire of stimulants and RSV subtypes. Additionally, increasing the number of biological replicates is crucial to minimise data variability. Including additional, more relevant cell lines and primary cells, such as patient-derived nasal tissue organoids, cultured in liquid-air interface cultures, would offer a more representative \textit{in vivo} context for selective stimulation/infection of cells relevant to RSV infection \cite{Michi2021ACells, Rajan2022TheTherapeutics}. Furthermore, our research lays the foundation for mechanistic studies on IFIT-mediated RSV inhibition. Assessing the subcellular localisation of IFIT proteins during RSV infection could provide insights into their mechanism of action. Lastly, given the limited information on the interaction with and induction by bovine RSV of bovine IFIT proteins and genes, further investigations are warranted to determine whether the observed data in human cell lines is conserved across species.
+
+
+
+
+
 
 %Words in text: 5692
 %Words in headers: 40
