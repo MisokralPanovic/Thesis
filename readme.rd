@@ -1,5 +1,5 @@
-Michal Varga PhD thesis
-========================
+# Michal Varga PhD thesis
+
 This repository contains the LaTeX source files and supporting materials for my PhD thesis, which was successfully defended at the University of Cambridge. It is based on [CUED PhD thesis template](https://github.com/kks32/phd-thesis-template) by Krishna Kumar. The project demonstrates my ability to:
 
 - **Write in LaTeX:** I used LaTeX for the entire document creation process, showcasing my proficiency with the platform, particularly for managing complex academic documents.
